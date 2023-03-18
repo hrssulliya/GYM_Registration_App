@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <span>{{title}}</span>
+  <span class="example-spacer"></span>
+  <button routerLink="/list" mat-mini-fab color="warn" aria-label="Example icon button with a menu icon">
+    <mat-icon>view_list</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="container mt-2 mb-4">
+  <router-outlet></router-outlet>
+</div>
+
+<lib-ng-toast></lib-ng-toast>
+<ng-confirm></ng-confirm>
